@@ -1,0 +1,2300 @@
+{
+  "id": "f7525a44-8419-493c-8ace-b7f09ddb1076",
+  "version": "2.0",
+  "name": "Prestashop",
+  "url": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+  "tests": [{
+    "id": "e16e12f3-5b7f-48e2-bbc7-14bf5a2354b4",
+    "name": "AddNewProduct",
+    "commands": [{
+      "id": "e5ec6f2d-a2d5-4244-8fcc-da8a2a45ef1c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91f6f64a-d278-4c79-bb26-5625f85fc8c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1164x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f8f6045-3c70-40cf-b4a2-0dcab4702842",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "488d7016-0274-4719-a277-1e9fd41b4f92",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "48911406-3ae9-455e-8cf8-d39cf61d8fae",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "42346859-4f77-425e-9367-9530ec45d960",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitLogin",
+      "targets": [
+        ["name=submitLogin", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='submitLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd4ed7ba-5038-460f-9af9-48e4b5c17301",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9f918f0-8dab-4316-8fd1-6be3b8a706fb",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickProducts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3de56eca-d9a4-43ca-abf1-61d9c15ad9e0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc68306b-378b-43b9-96d0-446e57996623",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=#subtab-AdminProducts > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Products')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminProducts']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'index.php?controller=AdminProducts&token=3d183a762bd8e8b0c8a37cfb360e4876')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d26f3e1-da12-4e8c-a534-dcd892f4d095",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:clickAddNewProduct",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27795544-08fb-4272-8524-e2917f03a20e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-product-new_product > .process-icon-new",
+      "targets": [
+        ["css=#page-header-desc-product-new_product > .process-icon-new", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-product-new_product']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/ul/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0940bb7e-65a9-4178-804a-a8df67405d7f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32276aa4-4501-44d2-91c5-b3e6a723575d",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:changeName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9069bcc2-04ce-4cc5-a11e-8af06aaf939b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name_1",
+      "targets": [
+        ["id=name_1", "id"],
+        ["name=name_1", "name"],
+        ["css=#name_1", "css:finder"],
+        ["xpath=//input[@id='name_1']", "xpath:attributes"],
+        ["xpath=//div[@id='product-informations']/div[3]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Blue Jacket3"
+    }, {
+      "id": "8b9ef253-7e67-4108-92eb-13347be620ca",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:clickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2495f416-8263-4e7d-ac5f-437d40c687b2",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitAddproduct",
+      "targets": [
+        ["name=submitAddproduct", "name"],
+        ["css=.panel-footer:nth-child(22) > .btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@name='submitAddproduct']", "xpath:attributes"],
+        ["xpath=//div[@id='product-informations']/div[16]/button", "xpath:idRelative"],
+        ["xpath=//div[16]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f678b42-489e-4e3d-ac46-e9d4840cb6ab",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46878fb7-cf00-4de4-84e4-d8a3a48fee32",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-success:nth-child(1)",
+      "targets": [
+        ["css=.alert-success:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]/div[4]/div", "xpath:position"]
+      ],
+      "value": "×\\nSuccessful creation"
+    }, {
+      "id": "136517ff-d76e-4be2-bac7-f71aae5fc7ca",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aec817ec-ccd4-4bdd-b99a-8bcb563c235f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name",
+      "targets": [
+        ["css=.employee_name", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminEmployees&token=996c4f7fa9c06dffbae366fa4c92a1e1&id_employee=1&updateemployee')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d98f201e-4e71-4a86-ba83-abefa1203a05",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7dbbd789-96a8-407f-be21-fca07916ed99",
+    "name": "AddEmptyProduct",
+    "commands": [{
+      "id": "10a43fec-519f-48b1-a429-4a86135acc65",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e616cf1-40c5-4a82-a92e-cc346047d47f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1179x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "537586dd-971e-4ea9-b357-72375c14f9e0",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18ef7f57-b95e-4a26-b238-ab3b8471b234",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "8a03b27f-f8ab-4860-9ff2-4d90964e8bb4",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "1c5ab7e3-19a1-45b7-baf5-b81737e3f9a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ladda-label",
+      "targets": [
+        ["css=.ladda-label", "css:finder"],
+        ["xpath=//form[@id='login_form']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76163292-6239-48d7-9c89-ff1dcb02c22e",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3816c1a5-6e8a-41e3-9e54-d47fdd99d2a7",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickProducts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f04b448b-b2e3-46b5-a453-35e598917588",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "213cd9d9-e8a0-4b8c-a738-4987842681c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=#subtab-AdminProducts > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Products')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminProducts']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'index.php?controller=AdminProducts&token=3d183a762bd8e8b0c8a37cfb360e4876')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e51b59cf-fbff-4086-90f6-062336c50bd8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.addons_connect",
+      "targets": [
+        ["css=.addons_connect", "css:finder"],
+        ["xpath=//ul[@id='header_employee_box']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' PrestaShop Marketplace')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4520d567-b7e2-42ce-a27d-d44bec7b6f16",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:clickAddNewProduct",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "884b2c88-7bcb-411f-a4af-7fc54ef20287",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-product-new_product > div",
+      "targets": [
+        ["css=#page-header-desc-product-new_product > div", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-product-new_product']/div", "xpath:idRelative"],
+        ["xpath=//li/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8832113a-87ae-4c2e-890e-0cdffc9dec5a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Help",
+      "targets": [
+        ["linkText=Help", "linkText"],
+        ["css=.btn-help", "css:finder"],
+        ["xpath=//ul[@id='toolbar-nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://help.prestashop.com/en/doc/AdminProducts?version=1.6.1.23&country=en']", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Help')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d5c6a29-5630-4b15-845c-c2b7f7dafbdc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f147517b-7a2c-4505-bca3-2f7f2c77f4bc",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:clickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adc74105-75b1-45d9-8aa9-7c0d146f1acc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel-footer:nth-child(22) > .btn:nth-child(2) > .process-icon-save",
+      "targets": [
+        ["css=.panel-footer:nth-child(22) > .btn:nth-child(2) > .process-icon-save", "css:finder"],
+        ["xpath=//div[@id='product-informations']/div[16]/button/i", "xpath:idRelative"],
+        ["xpath=//div[16]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca39954e-e925-4ac2-b79f-ace4e895a8ee",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,175.1999969482422)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5c4b632-ae4b-46d1-959b-e1e674104232",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0e587ca-a17b-48f7-a6d1-a77be8586fb4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=ol > li:nth-child(1)",
+      "targets": [
+        ["css=ol > li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div[4]/div/ol/li", "xpath:idRelative"],
+        ["xpath=//ol/li", "xpath:position"],
+        ["xpath=//li[contains(.,'This link_rewrite field is required at least in English (English)')]", "xpath:innerText"]
+      ],
+      "value": "This link_rewrite field is required at least in English (English)"
+    }, {
+      "id": "7ad8f1a8-fcc1-4676-ac72-4921acf11263",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87934cb5-c753-4cad-8be5-39b8104ddb04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name > .string-short",
+      "targets": [
+        ["css=.employee_name > .string-short", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aa3004b-2067-4bab-9673-5b31adf42961",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "185d94a8-fcfb-4768-9cfa-7ab71f88543f",
+    "name": "EditProduct",
+    "commands": [{
+      "id": "a1ab9c77-9e3e-4adc-b80b-200023b0f713",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f27eb40e-880d-4e2f-90b4-1c968c3ad487",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1184x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffc5164f-bb2a-400b-bf17-528f940a6b1c",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e7985d9-4406-4a33-a070-bb3abd780b96",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "74018c82-0996-4bc8-bbf2-a620a9a45e70",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "f64d502a-c838-47cf-94e2-a3ba6c52485f",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitLogin",
+      "targets": [
+        ["name=submitLogin", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='submitLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c3583a2-a45f-413a-92b6-fa3db9b91923",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01564276-0e8e-4b17-83f5-4d8a203763bc",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickProducts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "906255a4-04bd-49da-b128-7b5063533b69",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9422500-684a-4c94-9e05-63549f60367d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=#subtab-AdminProducts > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Products')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminProducts']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'index.php?controller=AdminProducts&token=3d183a762bd8e8b0c8a37cfb360e4876')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb73294a-8232-4b39-8cc8-cd71324f82a6",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:clickBlueJacket3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19d95e08-0fa7-447e-a21a-1e2cb35d321e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tr__10_0 .edit",
+      "targets": [
+        ["css=#tr__10_0 .edit", "css:finder"],
+        ["xpath=//tr[@id='tr__10_0']/td[11]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminProducts&id_product=10&updateproduct&token=3d183a762bd8e8b0c8a37cfb360e4876')]", "xpath:href"],
+        ["xpath=//tr[8]/td[11]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "930cbb96-6c47-4a08-91cb-5993589608f0",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:EditProductPage:changeName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d82e237a-4ae1-4934-83a8-d4aa399b06a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=name_1",
+      "targets": [
+        ["id=name_1", "id"],
+        ["name=name_1", "name"],
+        ["css=#name_1", "css:finder"],
+        ["xpath=//input[@id='name_1']", "xpath:attributes"],
+        ["xpath=//div[@id='product-informations']/div[3]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Deep Blue Jacket"
+    }, {
+      "id": "0177da36-9954-4207-ae8a-32cfed209414",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:EditProductPage:clickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83c320a8-38bb-437a-a2b2-e62845471df4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel-footer:nth-child(22) > .btn:nth-child(2) > .process-icon-save",
+      "targets": [
+        ["css=.panel-footer:nth-child(22) > .btn:nth-child(2) > .process-icon-save", "css:finder"],
+        ["xpath=//div[@id='product-informations']/div[16]/button/i", "xpath:idRelative"],
+        ["xpath=//div[16]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "258bbbe3-f75f-4913-83d3-37d3a7ca6a1e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,308.79998779296875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a554f44-ac8e-415d-96cd-f855d3bf3ddf",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b18334a-be51-42a7-96c4-a7e45b8e8cc2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-success:nth-child(1)",
+      "targets": [
+        ["css=.alert-success:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]/div[4]/div", "xpath:position"]
+      ],
+      "value": "×\\nSuccessful update"
+    }, {
+      "id": "cb70fef6-1659-43f6-b66b-8c9c841c7358",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0c19cb6-8191-44d2-9602-60b2ffeca658",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name",
+      "targets": [
+        ["css=.employee_name", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminEmployees&token=996c4f7fa9c06dffbae366fa4c92a1e1&id_employee=1&updateemployee')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15f1e42e-38a2-4580-944f-5491cfa0c4f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c7f34e1c-55de-489a-97c9-b1ccca752b63",
+    "name": "AddNewState",
+    "commands": [{
+      "id": "f591f548-0868-41d2-8322-159071be9b09",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6dfb9b3-9339-433b-ad28-5b544d3b541a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1182x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43be76f1-a7e1-419d-b546-807c5ae0bfb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "ab20beb7-1dd1-478b-b288-e277bd82db60",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "1c113a74-5fbb-4a75-a5a2-6e793059fb68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ladda-label",
+      "targets": [
+        ["css=.ladda-label", "css:finder"],
+        ["xpath=//form[@id='login_form']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3de03b57-eeab-4484-b37f-696caf079c64",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverLocalization",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f76f19df-dfbc-459b-9c6b-89e57da4d528",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Localization",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65d93ec0-5cbd-43cd-95c6-a3ddc2705626",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickStates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "152746c1-f4a9-427e-ac94-76e5512ebf07",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=States",
+      "targets": [
+        ["linkText=States", "linkText"],
+        ["css=#subtab-AdminStates > a", "css:finder"],
+        ["xpath=//a[contains(text(),'States')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminStates']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminStates&token=84324f0f454120fa0bb422bde5c2a634')]", "xpath:href"],
+        ["xpath=//li[9]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'States')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f58da57-5a3f-478b-b713-6eb35de96cb3",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:StatesPage:clickAddNewState",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2e28ce9-65ff-44be-9bb8-9753ca031f73",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-state-new_state > div",
+      "targets": [
+        ["css=#page-header-desc-state-new_state > div", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-state-new_state']/div", "xpath:idRelative"],
+        ["xpath=//li/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2079d991-ffe7-46eb-87f4-778c316f4074",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:changeName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4b52f03-8ccc-41f1-888a-4eee5118f9b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Liguria"
+    }, {
+      "id": "f5826641-b57e-4610-b266-5bd81d915bae",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:changeISOCode",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "625fea0b-0509-4f07-bf9a-e569254567f8",
+      "comment": "",
+      "command": "type",
+      "target": "id=iso_code",
+      "targets": [
+        ["id=iso_code", "id"],
+        ["name=iso_code", "name"],
+        ["css=#iso_code", "css:finder"],
+        ["xpath=//input[@id='iso_code']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1121"
+    }, {
+      "id": "57249f0e-2b9b-43dd-841f-311907bc33e8",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:changeCountry",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc8f3326-2bfd-44ef-bd3f-9aac0a60dbe9",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_country",
+      "targets": [
+        ["id=id_country", "id"],
+        ["name=id_country", "name"],
+        ["css=#id_country", "css:finder"],
+        ["xpath=//select[@id='id_country']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[2]/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a282c8c-158c-48ad-8ae8-4a67718b91f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id_country > option:nth-child(4)",
+      "targets": [
+        ["css=#id_country > option:nth-child(4)", "css:finder"],
+        ["xpath=//option[@value='10']", "xpath:attributes"],
+        ["xpath=//select[@id='id_country']/option[4]", "xpath:idRelative"],
+        ["xpath=//option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,'Italy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25d2e6eb-4ef5-4008-afd7-bc0181c8e089",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:changeZone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a6fc8b2-d38d-47f1-ac1c-85f47f604f9f",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_zone",
+      "targets": [],
+      "value": "label=Europe"
+    }, {
+      "id": "3fa2daf9-200b-4fea-9e7a-8cd8cf180a81",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id_zone > option:nth-child(4)",
+      "targets": [
+        ["css=#id_zone > option:nth-child(4)", "css:finder"],
+        ["xpath=//option[@value='1']", "xpath:attributes"],
+        ["xpath=//select[@id='id_zone']/option[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select/option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,'Europe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6bfd9db-3a6d-4cb8-9480-f55a5510792e",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:clickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a1ba291-b384-4364-bacc-bbdd1cf3961c",
+      "comment": "",
+      "command": "click",
+      "target": "id=state_form_submit_btn",
+      "targets": [
+        ["id=state_form_submit_btn", "id"],
+        ["css=#state_form_submit_btn", "css:finder"],
+        ["xpath=//button[@id='state_form_submit_btn']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df3bf83-c65d-4448-a153-0dcbb59fd3a0",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:StatesPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14624984-c547-41ac-ae05-a9bae693939f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-success:nth-child(1)",
+      "targets": [
+        ["css=.alert-success:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]/div[4]/div", "xpath:position"]
+      ],
+      "value": "×\\nSuccessful creation"
+    }, {
+      "id": "b5de11b0-3404-44b0-bd9b-520012cca291",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:StatesPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ff3b7f7-b8bd-4997-8f36-ae2c97fa947b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name > .string-short",
+      "targets": [
+        ["css=.employee_name > .string-short", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c5dcc53-53a8-42a9-9861-e157899bde0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fa95c84b-6ef3-4fa5-acc7-f1576000befc",
+    "name": "AddEmptyState",
+    "commands": [{
+      "id": "00429cfc-60ee-4ed4-ac0d-c8b9b77a24c6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8a537fd-0f55-411c-b540-b9a4ab6bc7bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1215x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ce4b072-a8d9-4cf4-85e2-ce538bb695f4",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c37cbd90-181d-41ed-a54d-560b09f75f0e",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "a58a0220-d8b9-42a2-bf8d-baefe182b924",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "719a0568-8064-4560-8f12-58433d584d65",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitLogin",
+      "targets": [
+        ["name=submitLogin", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='submitLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5886bc01-3b96-4b25-87ac-655d7cedb40f",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverLocalization",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "631f7f5f-c56e-458d-b6c7-d80662e807a9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Localization",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d8f500f-6a0f-4b06-a1c4-b822f847590d",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickStates",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "926e3152-8c53-4ade-8991-1e8a1941db26",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=States",
+      "targets": [
+        ["linkText=States", "linkText"],
+        ["css=#subtab-AdminStates > a", "css:finder"],
+        ["xpath=//a[contains(text(),'States')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminStates']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminStates&token=84324f0f454120fa0bb422bde5c2a634')]", "xpath:href"],
+        ["xpath=//li[9]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'States')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce18cc5d-9e8f-4d59-a0bf-71599794f7fa",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:StatesPage:clickAddNewState",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fb6fcfa-a57e-46df-8480-261f567b7d9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-state-new_state > .process-icon-new",
+      "targets": [
+        ["css=#page-header-desc-state-new_state > .process-icon-new", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-state-new_state']/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/ul/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0613642d-b10a-4f79-99b9-548905c322fa",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:clickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a76542b8-e039-42b9-a214-698ff5b68c16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.process-icon-save",
+      "targets": [
+        ["css=.process-icon-save", "css:finder"],
+        ["xpath=//button[@id='state_form_submit_btn']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "743f8b2e-1655-4963-abc6-9eb387222a2b",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0714e5bb-a97a-4065-b6c7-b86b9a6de87f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=ol > li:nth-child(2)",
+      "targets": [
+        ["css=ol > li:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div/ol/li[2]", "xpath:idRelative"],
+        ["xpath=//ol/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'The name field is required.')]", "xpath:innerText"]
+      ],
+      "value": "The name field is required."
+    }, {
+      "id": "62fbe556-364d-49b3-a17c-0cd5c9497a93",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewStatePage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34b5c2c0-ac2e-4fd2-bd59-38f1ecd4d544",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name > .string-long",
+      "targets": [
+        ["css=.employee_name > .string-long", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Dario Olianas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bebd0683-ac8f-4d96-acb4-d2d886f43d1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "991f7c3c-e947-4a9e-96ba-7d1b76e0211a",
+    "name": "AddNewProductWithTax",
+    "commands": [{
+      "id": "bc7288d2-a725-4678-872d-adb3bcca8b65",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e75d26f7-77bb-49e4-a0ad-6e90f2d82e33",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1185x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6773f003-a13a-4952-83e3-a34b3ab535c0",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2015cb2-f14b-4b06-a04d-b65c085192a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "53e5c57e-004a-4742-ab1b-5c7fd8d31e46",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "fc902443-b114-44e2-8f7b-7ae0216d5a76",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitLogin",
+      "targets": [
+        ["name=submitLogin", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='submitLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cbd9db3-9b42-4e03-b1e3-60f4b4d61ea0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.employee_avatar_small > .imgm",
+      "targets": [
+        ["css=.employee_avatar_small > .imgm", "css:finder"],
+        ["xpath=//img[contains(@src,'http://profile.prestashop.com/admin%40prestashop.com.jpg')]", "xpath:img"],
+        ["xpath=//li[@id='employee_infos']/a/span/img", "xpath:idRelative"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdcdee35-7a94-47a4-98f0-7d2592dc70af",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b9a7c05-d975-4fc8-a171-41e7a9d4c44d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85405d60-93cb-4327-8c98-2abe5f682480",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickProducts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f09e2df4-f7f0-4f68-9423-80c8b9a4cc79",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=#subtab-AdminProducts > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Products')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminProducts']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'index.php?controller=AdminProducts&token=3d183a762bd8e8b0c8a37cfb360e4876')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2a0dc6d-1f81-4f2a-a826-f182c11a89ff",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:clickAddNewProduct",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "170d0e1f-5981-4aa8-94e7-fe2a69aa02e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-product-new_product > .process-icon-new",
+      "targets": [
+        ["css=#page-header-desc-product-new_product > .process-icon-new", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-product-new_product']/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/ul/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e63d6ecc-8d69-4f6c-9d31-1907d6628b14",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:clickPrices",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c907340-426f-4732-a0ec-4b35c79b800a",
+      "comment": "",
+      "command": "click",
+      "target": "id=link-Prices",
+      "targets": [
+        ["id=link-Prices", "id"],
+        ["linkText=Prices", "linkText"],
+        ["css=#link-Prices", "css:finder"],
+        ["xpath=//a[contains(text(),'Prices')]", "xpath:link"],
+        ["xpath=//a[@id='link-Prices']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminProducts&token=3d183a762bd8e8b0c8a37cfb360e4876&id_product=0&action=Prices&updateproduct')]", "xpath:href"],
+        ["xpath=//div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prices')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "701678fb-f629-4971-ac9b-e71ad045f08f",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:changePreTaxRetailPrice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd1429e6-27d7-4361-9520-1bff58e82fcc",
+      "comment": "",
+      "command": "type",
+      "target": "id=priceTE",
+      "targets": [
+        ["id=priceTE", "id"],
+        ["name=price_displayed", "name"],
+        ["css=#priceTE", "css:finder"],
+        ["xpath=//input[@id='priceTE']", "xpath:attributes"],
+        ["xpath=//div[@id='product-prices']/div[3]/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input[2]", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "296ec8a8-4977-400f-8e6f-7ff1a9bce85b",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9617e6e8-04c6-4516-a6ad-c23df117e3d7",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=priceTI",
+      "targets": [
+        ["id=priceTI", "id"],
+        ["name=priceTI", "name"],
+        ["css=#priceTI", "css:finder"],
+        ["xpath=//input[@id='priceTI']", "xpath:attributes"],
+        ["xpath=//div[@id='product-prices']/div[6]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input[2]", "xpath:position"]
+      ],
+      "value": "12.20"
+    }, {
+      "id": "59c812a7-7903-46dd-b783-c32a54987d5b",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b089292-e881-4a90-9848-2b3eccbea365",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name",
+      "targets": [
+        ["css=.employee_name", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminEmployees&token=996c4f7fa9c06dffbae366fa4c92a1e1&id_employee=1&updateemployee')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d7978b2-451a-4be4-b4d9-5809fc1f2d1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "28532977-ae31-411f-a9a0-f93e23ece6d2",
+    "name": "AddNewProductWithTax10",
+    "commands": [{
+      "id": "df18699b-29c1-4669-9244-908cb063818b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b454863b-26a8-47e9-a2f5-21719d933e05",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1171x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dcb4465-4682-435c-8465-46d9e83d6f2b",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c125cae-7b5c-476b-a38a-072d808da675",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "6c6d23bd-a3ee-4439-ac20-0fca5341f283",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "6807b588-5c0a-4440-a496-587c7f9da479",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ladda-label",
+      "targets": [
+        ["css=.ladda-label", "css:finder"],
+        ["xpath=//form[@id='login_form']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbd2a94b-4224-4d81-8810-73e25060b7ef",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03eae02b-6712-4ada-9d91-ff14fdce1b5b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40c12c27-8f9d-4f72-93a6-458fbac221bd",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductsPage:clickAddNewProduct",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76e7ab56-f2c5-41cb-82ee-98b5f1665b15",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=#subtab-AdminProducts > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Products')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminProducts']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'index.php?controller=AdminProducts&token=3d183a762bd8e8b0c8a37cfb360e4876')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "136b09ef-9b50-4228-8fed-567f442fb915",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-product-new_product > .process-icon-new",
+      "targets": [
+        ["css=#page-header-desc-product-new_product > .process-icon-new", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-product-new_product']/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/ul/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c638dee-b3a2-4982-b1df-fc89e00221d2",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:clickPrices",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0913be78-ed04-48e4-be2f-731436ab63b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=link-Prices",
+      "targets": [
+        ["id=link-Prices", "id"],
+        ["linkText=Prices", "linkText"],
+        ["css=#link-Prices", "css:finder"],
+        ["xpath=//a[contains(text(),'Prices')]", "xpath:link"],
+        ["xpath=//a[@id='link-Prices']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminProducts&token=3d183a762bd8e8b0c8a37cfb360e4876&id_product=0&action=Prices&updateproduct')]", "xpath:href"],
+        ["xpath=//div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Prices')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef1ef13-d7ee-4c0c-b95d-c208ac14de45",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:changePreTaxRetailPrice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a181b97-0a0f-41de-8e50-ffa0a8165b2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product-prices > .form-group:nth-child(5)",
+      "targets": [
+        ["css=#product-prices > .form-group:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='product-prices']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da200502-a1d2-4b23-bbeb-13029b56605b",
+      "comment": "",
+      "command": "type",
+      "target": "id=priceTE",
+      "targets": [
+        ["id=priceTE", "id"],
+        ["name=price_displayed", "name"],
+        ["css=#priceTE", "css:finder"],
+        ["xpath=//input[@id='priceTE']", "xpath:attributes"],
+        ["xpath=//div[@id='product-prices']/div[3]/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input[2]", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "06bfb3be-a877-4c62-8401-1fd1b6952e64",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:changeTaxRule",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06cdb100-8675-48fe-be5a-c441ff6db04f",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_tax_rules_group",
+      "targets": [],
+      "value": "label=IT Reduced Rate (10%)"
+    }, {
+      "id": "33bb2516-2730-44eb-8921-7be5caa3b620",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(5)",
+      "targets": [
+        ["css=option:nth-child(5)", "css:finder"],
+        ["xpath=//option[@value='2']", "xpath:attributes"],
+        ["xpath=//select[@id='id_tax_rules_group']/option[5]", "xpath:idRelative"],
+        ["xpath=//option[5]", "xpath:position"],
+        ["xpath=//option[contains(.,'\n\t\t\t\t\tIT Reduced Rate (10%)\n\t\t\t\t\t\t')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c84ea5-ba74-41a3-946c-e12176368a3a",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=priceTI",
+      "targets": [
+        ["id=priceTI", "id"],
+        ["name=priceTI", "name"],
+        ["css=#priceTI", "css:finder"],
+        ["xpath=//input[@id='priceTI']", "xpath:attributes"],
+        ["xpath=//div[@id='product-prices']/div[6]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input[2]", "xpath:position"]
+      ],
+      "value": "11.00"
+    }, {
+      "id": "aa31df17-ddd5-41bc-a992-0c9ef0066833",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e9844b3-160b-4c53-bb4e-606601d01ca0",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewProductPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d35b32a0-1735-46fa-a88a-e2bd9c4bf53e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name",
+      "targets": [
+        ["css=.employee_name", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminEmployees&token=996c4f7fa9c06dffbae366fa4c92a1e1&id_employee=1&updateemployee')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d475451-d5ee-4077-9ff7-00fa308afb24",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cd2b4f4c-e8b2-45f8-8b93-a36c2902bfdb",
+    "name": "AddNewFeatures",
+    "commands": [{
+      "id": "458e75f7-6a51-402b-bc52-3663c39d6c3d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfacd739-ba00-49fe-93d3-b4f528c6b736",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1189x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea7024c6-16b1-498a-b655-098f8df5498f",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5432c9b8-a533-46fd-bf79-2ba79ce05d4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "974944a6-ad8f-497c-9506-f75f6f1b0f7c",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "bc68eb55-640b-46d5-97c6-0340f19c2cc8",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitLogin",
+      "targets": [
+        ["name=submitLogin", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='submitLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "262a497c-873f-484e-9c0b-a0310b6c560b",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50e59bc6-7407-49cf-acde-7cdede92698e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d0e2a79-db83-4455-9940-46b9ac765f91",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickProductFeatures",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f71730ab-679c-4e9e-9482-5fb8c985d021",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Product Features",
+      "targets": [
+        ["linkText=Product Features", "linkText"],
+        ["css=#subtab-AdminFeatures > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Product Features')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminFeatures']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminFeatures&token=dedcb563410f9afcc6960eb750c6600b')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Product Features')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f46cbe-7d1a-4dbb-8aed-b313fc753e7c",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductFeaturesPage:clickAddFeature",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f246266c-c717-4f45-bea7-e1696b0ac7fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-feature-new_feature > .process-icon-new",
+      "targets": [
+        ["css=#page-header-desc-feature-new_feature > .process-icon-new", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-feature-new_feature']/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/ul/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9503e2e-76a7-48e2-9e8c-b3eeba09cbf3",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewFeaturePage:changeName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e8f4cd4-5cb3-4d0a-a8ff-51f2a92a11d6",
+      "comment": "",
+      "command": "type",
+      "target": "id=name_1",
+      "targets": [
+        ["id=name_1", "id"],
+        ["name=name_1", "name"],
+        ["css=#name_1", "css:finder"],
+        ["xpath=//input[@id='name_1']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "Strong"
+    }, {
+      "id": "b6b5d30c-fc38-438a-89bc-59737403fffb",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewFeaturePage:clickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33d1d0ac-da72-4b2a-b222-4abb9ab0954f",
+      "comment": "",
+      "command": "click",
+      "target": "id=feature_form_submit_btn",
+      "targets": [
+        ["id=feature_form_submit_btn", "id"],
+        ["css=#feature_form_submit_btn", "css:finder"],
+        ["xpath=//button[@id='feature_form_submit_btn']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74992e9d-43a0-4fb4-a8be-38ffdc2b83a3",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductFeaturesPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e46ec6c-7f80-4256-bbdb-b8a4580c438d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert:nth-child(1)",
+      "targets": [
+        ["css=.alert:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "×\\nSuccessful creation"
+    }, {
+      "id": "897f7edc-bc01-460a-a541-41a30de784ca",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductFeaturesPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c44f467b-2315-477f-8031-a4892214f0e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name",
+      "targets": [
+        ["css=.employee_name", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminEmployees&token=996c4f7fa9c06dffbae366fa4c92a1e1&id_employee=1&updateemployee')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0db0505a-f020-418c-9431-3165902339ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "45f7122d-ea12-4dbf-a4f3-e7d0ccb0d3dc",
+    "name": "AddEmptyFeature",
+    "commands": [{
+      "id": "f02a14ab-071a-4fc9-bd9c-bed5272236b1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80a3f71b-7ec1-4cac-84cb-3b3b1bd82d70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1190x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e68fe2ca-585a-4bf5-9e28-93b4f782be1c",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9b646b8-3027-4654-b322-d1a508c33ddc",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "9d527757-d558-4301-8937-d6ccaa2b09d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "ff43fc81-d486-4f47-afd2-d70595750796",
+      "comment": "",
+      "command": "click",
+      "target": "name=submitLogin",
+      "targets": [
+        ["name=submitLogin", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@name='submitLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd24ba75-4ef8-4a23-907e-12fd75fddb27",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bee1ac2-b13a-4fb7-8c19-b6e4fe09f2e4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51b1ec74-e94f-48c1-a2a8-f1ea1c465dbe",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickProductFeatures",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4769841d-c223-4f95-bd29-f08e57deb1a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Product Features",
+      "targets": [
+        ["linkText=Product Features", "linkText"],
+        ["css=#subtab-AdminFeatures > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Product Features')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminFeatures']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminFeatures&token=dedcb563410f9afcc6960eb750c6600b')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Product Features')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b31421df-5fc0-42ad-94b9-d5d382be0a23",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductFeaturesPage:clickAddFeature",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd1c0bc0-e344-4f1f-8641-cd9929f978f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-feature-new_feature > div",
+      "targets": [
+        ["css=#page-header-desc-feature-new_feature > div", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-feature-new_feature']/div", "xpath:idRelative"],
+        ["xpath=//li/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0792efe3-c9e5-4379-a74d-2f1968ceb944",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewFeaturePage:clickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35b0e3ba-c925-44b2-908e-611e0a004cc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=feature_form_submit_btn",
+      "targets": [
+        ["id=feature_form_submit_btn", "id"],
+        ["css=#feature_form_submit_btn", "css:finder"],
+        ["xpath=//button[@id='feature_form_submit_btn']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1599909-1cf9-401e-98cc-d733d1c997bb",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewFeaturePage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb4e8fcf-9ecf-429c-afc4-9a72590af0b6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-danger",
+      "targets": [
+        ["css=.alert-danger", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "×\\nThe field name is required at least in English (English)."
+    }, {
+      "id": "6a65a09c-a7bd-4014-ba2e-0db5377db805",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewFeaturePage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f819243-30bd-4922-8cf8-72e86d26ff52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name > .string-short",
+      "targets": [
+        ["css=.employee_name > .string-short", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb2f276f-8bec-4144-adb0-5b5da127e33c",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fdc39f01-f031-4509-b132-a3e0debb3b9d",
+    "name": "AddNewAttribute",
+    "commands": [{
+      "id": "41245543-a198-48b6-825d-6700b321a6bf",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1e50b5d-85e5-4b6f-baad-31b1e2f0c492",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1192x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "775af1ee-03d1-485d-a1c3-ba6aca39cafd",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:LoginPage:doLogin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "067020b9-d091-4fd4-a3c6-2cf82f74bbd0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin@prestashop.com"
+    }, {
+      "id": "5376f7dc-496e-4e14-8604-8dde5589a6f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "5dbd6c54-3f47-4b8d-9b4a-536ae6ae9e82",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ladda-label",
+      "targets": [
+        ["css=.ladda-label", "css:finder"],
+        ["xpath=//form[@id='login_form']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd10d82e-fa4a-453d-a97a-d331587f1380",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:hoverCatalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44ac5be2-adb7-4317-9266-f5bb3e28d513",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Catalog",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2332a6c2-5336-4645-93d3-2c5ffdd4f86c",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:DashboardPage:clickProductAttributes",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9a60949-bb93-4157-b99a-217789f8f4c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Product Attributes",
+      "targets": [
+        ["linkText=Product Attributes", "linkText"],
+        ["css=#subtab-AdminAttributesGroups > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Product Attributes')]", "xpath:link"],
+        ["xpath=//li[@id='subtab-AdminAttributesGroups']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminAttributesGroups&token=6bebdaed7b6b10a7b147885beed1bb3e')]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Product Attributes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3fe9861-99cc-47d0-ba6b-acb5949b165b",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductAttributesPage:clickAddNewAttribute",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0de14aa-0858-4a4b-8bf0-b00157f0fe66",
+      "comment": "",
+      "command": "click",
+      "target": "css=#page-header-desc-attribute_group-new_attribute_group > .process-icon-new",
+      "targets": [
+        ["css=#page-header-desc-attribute_group-new_attribute_group > .process-icon-new", "css:finder"],
+        ["xpath=//a[@id='page-header-desc-attribute_group-new_attribute_group']/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/ul/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2221f2c9-f4a3-4916-9a99-946566c7c5fa",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewAttributePage:changeName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d841bbb2-9a6b-4228-87a9-70d94514d751",
+      "comment": "",
+      "command": "type",
+      "target": "id=name_1",
+      "targets": [
+        ["id=name_1", "id"],
+        ["name=name_1", "name"],
+        ["css=#name_1", "css:finder"],
+        ["xpath=//input[@id='name_1']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[2]/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "Quantity"
+    }, {
+      "id": "98a12c48-75fa-454f-b6b1-d7ad7a3d5d79",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewAttributePage:changePublicName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "779bbe55-1d26-4eaf-bf0f-a123f4dfd1f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=public_name_1",
+      "targets": [
+        ["id=public_name_1", "id"],
+        ["name=public_name_1", "name"],
+        ["css=#public_name_1", "css:finder"],
+        ["xpath=//input[@id='public_name_1']", "xpath:attributes"],
+        ["xpath=//div[@id='fieldset_0']/div[2]/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Qnt"
+    }, {
+      "id": "a9dc981c-0a56-4580-a29e-e4a51685aa67",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:NewAttributePage:ClickSave",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a25328f-fbc9-40a3-ab56-4e9821d3647d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.process-icon-save",
+      "targets": [
+        ["css=.process-icon-save", "css:finder"],
+        ["xpath=//button[@id='attribute_group_form_submit_btn']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b40e5347-5878-4c7c-ad31-31d54e4192f8",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductAttributesPage:getData",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "984c79d5-8ad8-477f-af5c-f5aa60be34ed",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert:nth-child(1)",
+      "targets": [
+        ["css=.alert:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "×\\nSuccessful creation"
+    }, {
+      "id": "329dfb1b-bf90-4edb-be78-06eb0b091dbe",
+      "comment": "",
+      "command": "echo",
+      "target": "{ASSESSOR}:ProductAttributesPage:SignOut",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdb0c50e-ced9-40c8-bd04-ed58deab0a8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.employee_name",
+      "targets": [
+        ["css=.employee_name", "css:finder"],
+        ["xpath=//li[@id='employee_infos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminEmployees&token=996c4f7fa9c06dffbae366fa4c92a1e1&id_employee=1&updateemployee')]", "xpath:href"],
+        ["xpath=//ul[3]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "629c6922-64c7-4815-9c00-b17a89246c23",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_logout",
+      "targets": [
+        ["id=header_logout", "id"],
+        ["linkText=Sign out", "linkText"],
+        ["css=#header_logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//a[@id='header_logout']", "xpath:attributes"],
+        ["xpath=//ul[@id='employee_links']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?controller=AdminLogin&token=7bdf1f27f9f64184c66c547816354b2b&logout')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5cbdbf2c-1d70-40eb-8c4a-95e8867c2e06",
+    "name": "Prestashop",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e16e12f3-5b7f-48e2-bbc7-14bf5a2354b4", "7dbbd789-96a8-407f-be21-fca07916ed99", "45f7122d-ea12-4dbf-a4f3-e7d0ccb0d3dc", "fa95c84b-6ef3-4fa5-acc7-f1576000befc", "fdc39f01-f031-4509-b132-a3e0debb3b9d", "cd2b4f4c-e8b2-45f8-8b93-a36c2902bfdb", "991f7c3c-e947-4a9e-96ba-7d1b76e0211a", "28532977-ae31-411f-a9a0-f93e23ece6d2", "c7f34e1c-55de-489a-97c9-b1ccca752b63", "185d94a8-fcfb-4768-9cfa-7ab71f88543f"]
+  }],
+  "urls": ["http://localhost:8080/administrator/index.php?controller=AdminLogin&token=6f8e295c6f145407a04731672a4f8b2a"],
+  "plugins": []
+}

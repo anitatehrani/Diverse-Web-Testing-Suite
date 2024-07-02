@@ -1,0 +1,23 @@
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: DashboardPage the method clickProducts is renamed in  clickProducts_1
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: ProductsPage the method clickAddNewProduct is renamed in  clickAddNewProduct_1
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: NewProductPage the method clickSave is renamed in  clickSave_1
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: DashboardPage the method hoverCatalog is renamed in  hoverCatalog_1
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: DashboardPage the method hoverCatalog is renamed in  hoverCatalog_2
+Jun 10, 2024, 1:35:49 AM - Warning: For PO:DashboardPage method hoverCatalog and hoverCatalog_1 unified under the name hoverCatalog_1 since bodies and paramters list are identical
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: ProductFeaturesPage the method clickAddFeature is renamed in  clickAddFeature_1
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: NewFeaturePage the method clickSave is renamed in  clickSave_1
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: LoginPage the method click_NAME_submitLogin is renamed in  click_NAME_submitLogin_1
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: DashboardPage the method clickProducts is renamed in  clickProducts_2
+Jun 10, 2024, 1:35:49 AM - Warning: Method name duplicate in PO: DashboardPage the method hoverCatalog is renamed in  hoverCatalog_3
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: ProductsPage the method clickAddNewProduct is renamed in  clickAddNewProduct_2
+Jun 10, 2024, 1:35:50 AM - Warning: The method declaration getData in the pageObject: NewProductPage is empty. So it will be discharged
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: DashboardPage the method hoverCatalog is renamed in  hoverCatalog_4
+Jun 10, 2024, 1:35:50 AM - Warning: For PO:ProductsPage method click_CSSSELECTOR_page_header_desc_product_new_productprocess_icon_new and clickAddNewProduct_2 unified under the name clickAddNewProduct_2 since bodies and paramters list are identical
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: ProductsPage the method clickAddNewProduct is renamed in  clickAddNewProduct_3
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: NewProductPage the method changePreTaxRetailPrice is renamed in  changePreTaxRetailPrice_1
+Jun 10, 2024, 1:35:50 AM - Warning: For PO:NewProductPage method set_ID_priceTE and changePreTaxRetailPrice unified under the name changePreTaxRetailPrice since bodies and paramters list are identical
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: NewProductPage the method clickPrices is renamed in  clickPrices_1
+Jun 10, 2024, 1:35:50 AM - Warning: For PO:NewProductPage method SignOut and click_CSSSELECTOR_employee_name unified under the name click_CSSSELECTOR_employee_name since bodies and paramters list are identical
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: NewProductPage the method getData is renamed in  getData_1
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: StatesPage the method clickAddNewState is renamed in  clickAddNewState_1
+Jun 10, 2024, 1:35:50 AM - Warning: Method name duplicate in PO: NewStatePage the method clickSave is renamed in  clickSave_1

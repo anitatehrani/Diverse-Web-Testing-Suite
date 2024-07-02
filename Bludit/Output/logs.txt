@@ -1,0 +1,19 @@
+Jun 8, 2024, 8:20:54 PM - Warning: For PO:DashboardPage method clickNewContent and click_CSSSELECTOR_uk_row_firstuk_panelnth_child1a unified under the name click_CSSSELECTOR_uk_row_firstuk_panelnth_child1a since bodies and paramters list are identical
+Jun 8, 2024, 8:20:54 PM - Warning: Method name duplicate in PO: ManageContentPage the method getData is renamed in  getData_1
+Jun 8, 2024, 8:20:55 PM - Warning: The method declaration getData in the pageObject: EditContentPage is empty. So it will be discharged
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: EditContentPage the method clickAdvanced is renamed in  clickAdvanced_1
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: UsersPage the method logout is renamed in  logout_1
+Jun 8, 2024, 8:20:55 PM - Warning: For PO:LoginPage method doLogin and click_CSSSELECTOR_uk_button unified under the name click_CSSSELECTOR_uk_button since bodies and paramters list are identical
+Jun 8, 2024, 8:20:55 PM - Warning: The method declaration clearFriendlyUrl in the pageObject: EditContentPage is empty. So it will be discharged
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: EditContentPage the method clickAdvanced is renamed in  clickAdvanced_2
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: ManageContentPage the method getData is renamed in  getData_2
+Jun 8, 2024, 8:20:55 PM - Warning: The method declaration clickOk in the pageObject: EditContentPage is empty. So it will be discharged
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: EditContentPage the method clickAdvanced is renamed in  clickAdvanced_3
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: ManageContentPage the method getData is renamed in  getData_3
+Jun 8, 2024, 8:20:55 PM - Warning: The method declaration changePosition in the pageObject: EditContentPage is empty. So it will be discharged
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: EditContentPage the method clickAdvanced is renamed in  clickAdvanced_4
+Jun 8, 2024, 8:20:55 PM - Warning: The method declaration getData in the pageObject: EditContentPage is empty. So it will be discharged
+Jun 8, 2024, 8:20:55 PM - Warning: For PO:EditContentPage method logout and click_LINKTEXT_Logout unified under the name click_LINKTEXT_Logout since bodies and paramters list are identical
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: EditContentPage the method clickAdvanced is renamed in  clickAdvanced_5
+Jun 8, 2024, 8:20:55 PM - Warning: For PO:UsersPage method click_LINKTEXT_admin and clickAdmin unified under the name clickAdmin since bodies and paramters list are identical
+Jun 8, 2024, 8:20:55 PM - Warning: Method name duplicate in PO: UsersPage the method clickAdmin is renamed in  clickAdmin_1
